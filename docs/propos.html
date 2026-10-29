@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pâtisserie Pilea - À propos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-default-page="apropos">
+  <header>
+    <a class="logo" href="index.html#accueil">Pâtisserie Pilea<span class="tag">Pâtisserie artisanale et 100 % végétale</span></a>
+    <nav>
+      <a href="index.html#accueil" data-p="accueil">Accueil</a>
+      <a href="carte.html#carte" data-p="carte">À la carte</a>
+      <a href="propos.html#apropos" data-p="apropos">À propos</a>
+      <a href="contact.html#contact" data-p="contact">Contact</a>
+      <a class="ig" href="https://www.instagram.com/patisserie_pilea/" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page hero" id="accueil">
+      <h1>La gourmandise<br>a du bon.</h1>
+      <p>Une pâtisserie gourmande et engagée, sans ingrédient d'origine animale, à partager au quotidien ou dans vos lieux de vie préférés !</p>
+      <a class="btn" href="carte.html#carte">Voir la carte</a>
+    </section>
+
+    <section class="page" id="carte">
+      <div class="menu">
+        <h1 class="title" style="padding-bottom:18px">À la carte</h1>
+        <p class="intro">Les tarifs affichés sont destinés à la vente au détail. Pour les commandes en gros, les prix sont dégressifs.</p>
+        <p class="intro">N'hésitez pas à nous contacter via le formulaire de contact pour toute demande ou devis.</p>
+        <h2>Petits plaisirs</h2>
+        <p class="sub">Généreux cookies, muffins moelleux ou encore cakes gourmands : des douceurs artisanales à emporter partout et à savourer à tout moment !</p>
+        <div class="grid" id="g1"></div>
+        <h2>Tartes de saison</h2>
+        <p class="sub">Des tartes artisanales aux mille saveurs : la fraîcheur des fruits de saison, l'intensité du chocolat ou bien la douceur des amandes, il y en a pour tous les goûts. Des recettes gourmandes qui allient fraîcheur, modernité et gourmandise !</p>
+        <div class="grid" id="g2"></div>
+      </div>
+    </section>
+
+    <section class="page" id="apropos">
+      <div class="band"><h1 class="title" style="padding:40px 16px">À propos</h1></div>
+      <div class="split">
+        <img data-k="piping" alt="Dressage d'une crème à la poche">
+        <div class="txt" style="background:var(--bg)">
+          <h2>L'univers de Pilea</h2>
+          <p>Le Pilea est une plante qui grandit et se multiplie, symbole de mon envie de faire de Pâtisserie Pilea un <b>projet vivant</b>, appelé à grandir et <b>se partager</b>.</p>
+          <p>Titulaire du CAP Pâtissier, j'ai exploré différents univers, de la boulangerie traditionnelle au coffee shop vegan, en passant par la restauration et la production à grande échelle. Ces expériences ont nourri une même envie : créer une pâtisserie qui ait du sens, <b>sans renoncer au plaisir</b>.</p>
+          <p>Végétarienne pour des raisons éthiques et écologiques, j'ai découvert la pâtisserie végétale avec curiosité, mais aussi quelques appréhensions. Pourtant, j'ai vite réalisé qu'elle pouvait être tout aussi gourmande que la pâtisserie traditionnelle, et parfois même davantage ! <b>Se faire plaisir</b> tout en étant <b>en accord avec mes convictions</b>, c'est possible.</p>
+        </div>
+      </div>
+      <div class="split band">
+        <div class="txt">
+          <h2 style="font-weight:400">La pâtisserie végétale :<br><b style="font-weight:700">un terrain de jeu infini</b></h2>
+          <p>Avec un peu de curiosité et beaucoup de gourmandise, la pâtisserie végétale est illimitée et sans compromis.</p>
+          <p>Pilea Pâtisserie, c'est <b>partager cette conviction avec vous</b>, une création après l'autre.</p>
+        </div>
+        <img data-k="cookie" alt="Cookies vegan">
+      </div>
+    </section>
+
+    <section class="page" id="contact">
+      <div class="split band">
+        <form id="f">
+          <label for="n">Nom *</label><input id="n" type="text" required>
+          <label for="e">E-mail *</label><input id="e" type="email" required>
+          <label for="t">Téléphone *</label><input id="t" type="tel" required>
+          <label>Type de demande *</label>
+          <div class="radios">
+            <label><input type="radio" name="r" value="Particulier" required>Particulier</label>
+            <label><input type="radio" name="r" value="Professionnel">Professionnel</label>
+            <label><input type="radio" name="r" value="Événement">Événement</label>
+          </div>
+          <label for="m">Demande</label><textarea id="m" rows="5"></textarea>
+          <button class="send" type="submit">Envoyer</button>
+          <p id="msg" role="status" style="margin:10px 0 0"></p>
+        </form>
+        <img data-k="fraises" alt="Tarte aux fraises">
+      </div>
+    </section>
+
+    <section class="page legal-wrap" id="mentions">
+      <h1 class="title">Mentions légales &amp; Confidentialité</h1>
+      <div class="legal">
+        <h2>1. Éditeur du site</h2>
+        <ul>
+          <li>Dénomination commerciale : Pâtisserie Pilea</li>
+          <li>Forme juridique : Entrepreneur Individuel / Micro-entreprise</li>
+          <li>Nom &amp; Prénom du responsable : Louann Démottié</li>
+          <li>Adresse du siège social / domicile professionnel : [Adresse complète, CP Ville] — Grenoble, France</li>
+          <li>SIRET : [en cours]</li>
+          <li>TVA : TVA non applicable, art. 293 B du Code Général des Impôts (CGI)</li>
+          <li>Téléphone : 06 51 63 11 55</li>
+          <li>Adresse email : <a href="mailto:patisseriepilea@gmail.com">patisseriepilea@gmail.com</a></li>
+        </ul>
+        <h2>2. Hébergement du site</h2>
+        <ul>
+          <li>Hébergeur : Wix Online Platforms Limited</li>
+          <li>Adresse : 1 Grant's Row, Dublin 2, D02 HX96, Irlande</li>
+          <li>Site Web : <a href="https://www.wix.com">https://www.wix.com</a></li>
+        </ul>
+        <h2>3. Protection des données personnelles (RGPD)</h2>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi « Informatique et Libertés » du 6 janvier 1978 modifiée :</p>
+        <ul>
+          <li>Responsable du traitement : Pâtisserie Pilea (<a href="mailto:patisseriepilea@gmail.com">patisseriepilea@gmail.com</a>).</li>
+          <li>Données collectées : Les données personnelles collectées via le formulaire de contact (Nom, Prénom, Email, Téléphone) sont strictement réservées au traitement des demandes de prestations, à l'élaboration de devis/contrats et à la gestion du suivi client.</li>
+          <li>Conservation des données : Les données sont conservées pendant la durée nécessaire à la relation commerciale, et au maximum 3 ans après le dernier contact pour les prospects, ou selon les obligations légales pour les documents comptables.</li>
+          <li>Destinataires : Aucune donnée personnelle n'est vendue, cédée ou transmise à des tiers.</li>
+          <li>Vos droits : Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation du traitement et d'opposition au traitement de vos données. Pour exercer ce droit, écrivez à : <a href="mailto:patisseriepilea@gmail.com">patisseriepilea@gmail.com</a>.</li>
+          <li>Réclamation : Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) sur <a href="https://cnil.fr">cnil.fr</a>.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a class="logo" href="index.html#accueil">Pâtisserie Pilea</a>
+      <p>Pâtisserie artisanale et 100 % végétale, faite main à Grenoble. Sans ingrédient d'origine animale, sans compromis sur le goût.</p>
+    </div>
+    <div class="c">
+      <h4>CONTACT</h4>
+      Louann DÉMOTTIÉ<br>
+      <a href="mailto:patisseriepilea@gmail.com" style="text-decoration:none">patisseriepilea@gmail.com</a><br>
+      06 51 63 11 55<br>
+      <a class="ig" href="https://www.instagram.com/patisserie_pilea/" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+    <div>
+      <h4>HORAIRES</h4>
+      <div class="hrs">
+        <span>Lundi - Vendredi</span><span>9h-19h</span>
+        <span>Samedi</span><span>9h-13h</span>
+        <span>Dimanche</span><span>Fermé</span>
+      </div>
+    </div>
+    <div class="c">
+      <h4>LIVRAISON</h4>Grenoble et alentours
+    </div>
+    <a class="btn fbtn" href="contact.html#contact">Contact</a>
+    <div class="copy">© 2026 - Pâtisserie Pilea - <a href="index.html#mentions">Mentions légales</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
